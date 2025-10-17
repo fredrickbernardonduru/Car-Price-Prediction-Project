@@ -6,7 +6,7 @@ import pickle
 # -----------------------------
 # Load model and training columns
 # -----------------------------
-with open("car_price_pipeline.pkl", "rb") as f:
+with open("Car_Price_Model.pkl", "rb") as f:
     data = pickle.load(f)
 
 model = data["model"]
