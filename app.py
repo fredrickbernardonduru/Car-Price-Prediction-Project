@@ -8,3 +8,12 @@ with open('Car_Price_Model.pkl', 'rb') as file:
 
 #Litle and Description
 st.set_page_config(page_title="Car Price Prediction", page_icon="🚚", layout = 'centered')
+
+st.title('Car Orice Prediction App')
+st.markdown("""
+""")
+#import section
+
+
+
+
