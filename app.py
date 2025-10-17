@@ -7,7 +7,7 @@ import pickle
 # -----------------------------
 # Load model and training columns
 # -----------------------------
-with open("Car_Price_Model2.pkl", "rb") as f:
+with open("Car_Price_Model3.pkl", "rb") as f:
     data = pickle.load(f)
     #data = joblib.load(f)
 
@@ -82,7 +82,7 @@ input_encoded = input_encoded.reindex(columns=model_columns, fill_value=0)
 if st.button("🔮 Predict Car Price"):
     try:
         prediction = model.predict(input_encoded)[0]
-        st.success(f"💰 Estimated Car Price: ₹{prediction:,.2f}")
+        st.success(f"💰 Estimated Car Price: $ {prediction:,.2f}")
         st.balloons()
     except Exception as e:
         st.error(f"⚠️ Error: {e}")
