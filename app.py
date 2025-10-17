@@ -1,13 +1,15 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+#import joblib
 import pickle
 
 # -----------------------------
 # Load model and training columns
 # -----------------------------
-with open("Car_Price_Model.pkl", "rb") as f:
+with open("Car_Price_Model2.pkl", "rb") as f:
     data = pickle.load(f)
+    #data = joblib.load(f)
 
 model = data["model"]
 model_columns = data["columns"]
